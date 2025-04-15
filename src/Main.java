@@ -7,7 +7,7 @@ public class Main {
         checkYear(year);
         System.out.println();
         System.out.println("Задание 2");
-        int clientOS = 1;
+        int clientOS = 0;
         int clientDeviceYear = 2014;
         checkOS(clientOS, clientDeviceYear);
         System.out.println();
@@ -31,7 +31,7 @@ public class Main {
     }
 
     public static void checkOS(int clientOS, int clientDeviceYear) {
-        int dateNow = LocalDate.now().getYear();
+        int dateNow = 2015;
         if (clientOS == 1 && clientDeviceYear >= dateNow) {
             System.out.println("Установите версию приложения для Android по ссылке: ");
         } else if (clientOS == 0 && clientDeviceYear >= dateNow) {
